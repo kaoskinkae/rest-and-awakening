@@ -24,8 +24,7 @@ This is when ChapGPT didn't know or understand the issue well and assumed that i
 
 ![Captura de pantalla 2025-05-18 a las 11 08 28](https://github.com/user-attachments/assets/6d37f0a3-b3fd-4e5a-b988-c0d596911523)
 
-
-
+![Captura de pantalla 2025-05-18 a las 11 13 06](https://github.com/user-attachments/assets/3cb94abd-8f71-40ce-9ac3-da81d94de4f2)
 
 
 Therefore, if we are having sleep and wake-up issues, this may be the solution. I'm leaving a screenshot of the SSDT and patch, and a zip file of both the compiled and uncompiled SSDTs.
