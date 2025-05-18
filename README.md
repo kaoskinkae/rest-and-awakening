@@ -19,10 +19,6 @@ The second option was to do some research, and that's when two sections were cre
 
 This is when ChapGPT didn't know or understand the issue well and assumed that it was only necessary to use the Part. But once a video was published on the Hackintosh Spain channel, a colleague's response completely clarified the issue.
 
-![85436b66-c73a-46d8-9e91-40e094ab4ea5](https://github.com/user-attachments/assets/0d72575b-2a72-4797-98dc-81029f1fe621)
-
-
-
 "In ACPI architecture, the DSDT is always loaded first because it is the main table that defines the hardware configuration and its methods. SSDTs are secondary tables that can modify or extend the functionality of the DSDT but never directly replace it. For this reason, when we want to modify the behavior of methods already defined in the DSDT, such as the _PRW (Power Resource for Wake) method, we cannot simply define a new method in an SSDT without first performing a "rename" in the ⁠config.plist file. This process consists of renaming _PRW to XPRW, which It prevents the system from recognizing the original method and allows us to define a new _PRW with ⁠Return (Zero)⁠ in an SSDT. The _PRW method is a power management object, and when defined with ⁠Return (Zero)⁠, we indicate that the device does not have the ability to wake the system from sleep. However, if we only create an SSDT with the XPRW method, it will have no effect because XPRW is not an ACPI-recognized method. For the system to accept the modification, the SSDT must contain a new _PRW method with ⁠Return (Zero). This approach is essential for correcting "instant wake" issues in macOS, where certain devices such as USB controllers or network cards can generate unwanted wake-up events.
 
 
