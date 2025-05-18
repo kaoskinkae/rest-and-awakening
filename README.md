@@ -1,4 +1,4 @@
-Sleep on a Haswell with Imapro 1.1 and Radeon RX560
+## Sleep on a Haswell with Imapro 1.1 and Radeon RX560
 
 Sleep on this computer with the specifications listed above wouldn't go to sleep. I did some research and asked ChapGPT. It gave me two commands I needed to see when it goes to sleep and after sleep, using the following two commands:
 
